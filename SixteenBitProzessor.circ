@@ -1530,7 +1530,6 @@
     <wire from="(730,320)" to="(730,500)"/>
   </circuit>
   <circuit name="Eq16_PC_NPC">
-    <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Eq16_PC_NPC"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
@@ -1610,5 +1609,99 @@
     <wire from="(540,410)" to="(550,410)"/>
     <wire from="(600,430)" to="(610,430)"/>
     <wire from="(730,320)" to="(730,500)"/>
+  </circuit>
+  <circuit name="Control16_Bus">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Control16_Bus"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(150,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="STEP_CLOCK"/>
+    </comp>
+    <comp lib="0" loc="(150,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="EN"/>
+    </comp>
+    <comp lib="0" loc="(150,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(200,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="PC"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(200,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="NPC"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(660,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="PHASE"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(660,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ExecEn"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(660,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CommitEn"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(660,310)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="EqPCNPC"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(510,160)" name="NOT Gate"/>
+    <comp lib="1" loc="(590,180)" name="AND Gate"/>
+    <comp lib="1" loc="(590,240)" name="AND Gate"/>
+    <comp lib="1" loc="(590,310)" name="AND Gate"/>
+    <comp lib="4" loc="(290,130)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(330,330)" name="Eq16_PC_NPC">
+      <a name="label" val="eq16"/>
+    </comp>
+    <wire from="(150,180)" to="(280,180)"/>
+    <wire from="(150,200)" to="(510,200)"/>
+    <wire from="(150,220)" to="(310,220)"/>
+    <wire from="(200,330)" to="(300,330)"/>
+    <wire from="(200,370)" to="(290,370)"/>
+    <wire from="(240,140)" to="(280,140)"/>
+    <wire from="(240,90)" to="(240,140)"/>
+    <wire from="(240,90)" to="(520,90)"/>
+    <wire from="(280,140)" to="(290,140)"/>
+    <wire from="(290,140)" to="(290,150)"/>
+    <wire from="(290,340)" to="(290,370)"/>
+    <wire from="(290,340)" to="(300,340)"/>
+    <wire from="(310,190)" to="(310,220)"/>
+    <wire from="(330,330)" to="(540,330)"/>
+    <wire from="(340,140)" to="(440,140)"/>
+    <wire from="(440,110)" to="(440,140)"/>
+    <wire from="(440,110)" to="(660,110)"/>
+    <wire from="(440,140)" to="(440,160)"/>
+    <wire from="(440,160)" to="(440,260)"/>
+    <wire from="(440,160)" to="(480,160)"/>
+    <wire from="(440,260)" to="(440,290)"/>
+    <wire from="(440,260)" to="(540,260)"/>
+    <wire from="(440,290)" to="(540,290)"/>
+    <wire from="(510,160)" to="(520,160)"/>
+    <wire from="(510,200)" to="(510,220)"/>
+    <wire from="(510,200)" to="(540,200)"/>
+    <wire from="(510,220)" to="(540,220)"/>
+    <wire from="(520,160)" to="(540,160)"/>
+    <wire from="(520,90)" to="(520,160)"/>
+    <wire from="(590,180)" to="(660,180)"/>
+    <wire from="(590,240)" to="(660,240)"/>
+    <wire from="(590,310)" to="(660,310)"/>
   </circuit>
 </project>
