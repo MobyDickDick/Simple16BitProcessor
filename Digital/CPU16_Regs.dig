@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='utf-8'?>
+<circuit>
+  <version>2</version>
+  <attributes>
+    <entry>
+      <string>Description</string>
+      <string>Template: register block for a 16-bit CPU (PC/NPC/IR/A/ADDR).</string>
+      </entry>
+    <entry>
+      <string>Width</string>
+      <int>4</int>
+      </entry>
+    </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ExecEn</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>1</int>
+          </entry>
+        </elementAttributes>
+      <pos x="0" y="40" />
+      </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CommitEn</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>1</int>
+          </entry>
+        </elementAttributes>
+      <pos x="0" y="60" />
+      </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>RESET</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>1</int>
+          </entry>
+        </elementAttributes>
+      <pos x="0" y="80" />
+      </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>IR_in</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="0" y="100" />
+      </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PC_in</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="0" y="120" />
+      </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A_in</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="0" y="140" />
+      </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ADDR_in</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="0" y="160" />
+      </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PC_out</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="240" y="40" />
+      </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>NPC_out</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="240" y="60" />
+      </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A_out</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="240" y="80" />
+      </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ADDR_out</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="240" y="100" />
+      </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>IR_out</string>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="240" y="120" />
+      </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <int>0</int>
+          </entry>
+        <entry>
+          <string>Bits</string>
+          <int>1</int>
+          </entry>
+        </elementAttributes>
+      <pos x="120" y="120" />
+      </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="120" y="30" />
+      </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="120" y="70" />
+      </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="120" y="110" />
+      </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="120" y="150" />
+      </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+          </entry>
+        </elementAttributes>
+      <pos x="120" y="190" />
+      </visualElement>
+    </visualElements>
+  <wires>
+    <wire>
+      <p1 x="0" y="40" />
+      <p2 x="90" y="40" />
+      </wire>
+    <wire>
+      <p1 x="90" y="40" />
+      <p2 x="90" y="210" />
+      </wire>
+    <wire>
+      <p1 x="90" y="90" />
+      <p2 x="120" y="90" />
+      </wire>
+    <wire>
+      <p1 x="90" y="130" />
+      <p2 x="120" y="130" />
+      </wire>
+    <wire>
+      <p1 x="90" y="170" />
+      <p2 x="120" y="170" />
+      </wire>
+    <wire>
+      <p1 x="90" y="210" />
+      <p2 x="120" y="210" />
+      </wire>
+    <wire>
+      <p1 x="0" y="60" />
+      <p2 x="100" y="60" />
+      </wire>
+    <wire>
+      <p1 x="100" y="60" />
+      <p2 x="100" y="50" />
+      </wire>
+    <wire>
+      <p1 x="100" y="50" />
+      <p2 x="120" y="50" />
+      </wire>
+    <wire>
+      <p1 x="0" y="120" />
+      <p2 x="60" y="120" />
+      </wire>
+    <wire>
+      <p1 x="60" y="120" />
+      <p2 x="60" y="30" />
+      </wire>
+    <wire>
+      <p1 x="60" y="30" />
+      <p2 x="120" y="30" />
+      </wire>
+    <wire>
+      <p1 x="60" y="70" />
+      <p2 x="120" y="70" />
+      </wire>
+    <wire>
+      <p1 x="0" y="140" />
+      <p2 x="40" y="140" />
+      </wire>
+    <wire>
+      <p1 x="40" y="140" />
+      <p2 x="40" y="110" />
+      </wire>
+    <wire>
+      <p1 x="40" y="110" />
+      <p2 x="120" y="110" />
+      </wire>
+    <wire>
+      <p1 x="0" y="160" />
+      <p2 x="20" y="160" />
+      </wire>
+    <wire>
+      <p1 x="20" y="160" />
+      <p2 x="20" y="150" />
+      </wire>
+    <wire>
+      <p1 x="20" y="150" />
+      <p2 x="120" y="150" />
+      </wire>
+    <wire>
+      <p1 x="0" y="100" />
+      <p2 x="80" y="100" />
+      </wire>
+    <wire>
+      <p1 x="80" y="100" />
+      <p2 x="80" y="190" />
+      </wire>
+    <wire>
+      <p1 x="80" y="190" />
+      <p2 x="120" y="190" />
+      </wire>
+    <wire>
+      <p1 x="180" y="30" />
+      <p2 x="200" y="30" />
+      </wire>
+    <wire>
+      <p1 x="200" y="30" />
+      <p2 x="200" y="40" />
+      </wire>
+    <wire>
+      <p1 x="200" y="40" />
+      <p2 x="240" y="40" />
+      </wire>
+    <wire>
+      <p1 x="180" y="70" />
+      <p2 x="200" y="70" />
+      </wire>
+    <wire>
+      <p1 x="200" y="70" />
+      <p2 x="200" y="60" />
+      </wire>
+    <wire>
+      <p1 x="200" y="60" />
+      <p2 x="240" y="60" />
+      </wire>
+    <wire>
+      <p1 x="180" y="110" />
+      <p2 x="210" y="110" />
+      </wire>
+    <wire>
+      <p1 x="210" y="110" />
+      <p2 x="210" y="80" />
+      </wire>
+    <wire>
+      <p1 x="210" y="80" />
+      <p2 x="240" y="80" />
+      </wire>
+    <wire>
+      <p1 x="180" y="150" />
+      <p2 x="220" y="150" />
+      </wire>
+    <wire>
+      <p1 x="220" y="150" />
+      <p2 x="220" y="100" />
+      </wire>
+    <wire>
+      <p1 x="220" y="100" />
+      <p2 x="240" y="100" />
+      </wire>
+    <wire>
+      <p1 x="180" y="190" />
+      <p2 x="230" y="190" />
+      </wire>
+    <wire>
+      <p1 x="230" y="190" />
+      <p2 x="230" y="120" />
+      </wire>
+    <wire>
+      <p1 x="230" y="120" />
+      <p2 x="240" y="120" />
+      </wire>
+    </wires>
+  <measurementOrdering>
+    <string>Clock</string>
+    <string>ExecEn</string>
+    <string>CommitEn</string>
+    <string>RESET</string>
+    <string>IR_in</string>
+    <string>PC_in</string>
+    <string>A_in</string>
+    <string>ADDR_in</string>
+    <string>PC_out</string>
+    <string>NPC_out</string>
+    <string>A_out</string>
+    <string>ADDR_out</string>
+    <string>IR_out</string>
+    </measurementOrdering>
+  </circuit>
